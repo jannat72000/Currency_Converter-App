@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Game | Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="container">
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="scores">
+      <p>Computer: <span id="computer_score">0</span></p>
+      <p>You: <span id="user_score">0</span></p>
+    </div>
+    <div class="result_field">
+      <div class="result_images">
+        <span class="user_result">
+          <img src="images/rock.png" alt="rock" />
+        </span>
+        <span class="cpu_result">
+          <img src="images/rock.png" alt="rock" />
+        </span>
+      </div>
+      <div class="result">Let's Play!!</div>
+      <div class="choices">
+        <p>Computer chose: <span id="computer_choice">Rock</span></p>
+        <p>You chose: <span id="user_choice">Rock</span></p>
+      </div>
+      <div class="winner"></div>
+    </div>
+    <div class="option_images">
+      <span class="option_image" data-choice="rock">
+        <img src="images/rock.png" alt="rock" />
+        <p>Rock</p>
+      </span>
+      <span class="option_image" data-choice="paper">
+        <img src="images/paper.png" alt="paper" />
+        <p>Paper</p>
+      </span>
+      <span class="option_image" data-choice="scissors">
+        <img src="images/scissors.png" alt="scissors" />
+        <p>Scissors</p>
+      </span>
+    </div>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>
